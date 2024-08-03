@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Lista de Tarefas</title>
+</head>
+
+<body class="bg-blue-900">
+    <div class="container">
+        <header class="w-full flex flex-col text-center content-center my-3">
+            <h1 class="text-3xl text-gray-200 my-2">Todo List</h1>
+            <form id="search">
+                <input type="text" placeholder="Digite uma tarefa!" name="search"
+                    class="w-56 py-1 px-2 outline-none rounded-sm">
+            </form>
+        </header>
+        <ul class="w-60 bg-slate-800 flex flex-col m-auto rounded-lg px-5 py-2 shadow-lg">
+            <li class="flex items-center justify-between px-5 py-1 my-2 bg-slate-700">
+                <span class="text-gray-300">Ir para academia</span>
+                <i class="far fa-trash-alt cursor-pointer text-gray-300"></i>
+            </li>
+
+            <li class="flex  items-center justify-between px-5 py-1 my-2 bg-slate-700">
+                <span class="text-gray-300">Fazer as compras</span>
+                <i class="far fa-trash-alt cursor-pointer text-gray-300"></i>
+            </li>
+
+            <li class="flex  items-center justify-between px-5 py-1 my-2 bg-slate-700">
+                <span class="text-gray-300">Ir ao cinema</span>
+                <i class="far fa-trash-alt cursor-pointer text-gray-300"></i>
+            </li>
+            
+        </ul>
+
+        <form id="addTodo" class="w-60 m-auto flex flex-col items-center bg-slate-800 rounded-lg px-5 pb-5 my-4">
+            <label class="text-lg text-gray-200 m-2">Adicionar uma tarefa!</label>
+            <input type="text" name="add" placeholder="Adicione uma tarefa!" class="w-52 py-1 px-2 outline-none rounded-sm ">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
